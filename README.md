@@ -38,6 +38,18 @@ aari-azure-quantum-lockbox/
 
 ## 5-Minute Quickstart
 
+Do this first:
+
+```bash
+python3 scripts/quantum_lockbox.py
+```
+
+Then cloud extension:
+
+```bash
+python3 scripts/submit_to_azure.py
+```
+
 1. Create and activate a Python environment.
 
 ```bash
@@ -187,6 +199,10 @@ The story students should remember is:
 
 `We used quantum physics to create a secret key.`
 
+## 90-Second Explanation
+
+“We created quantum random bits with Q#. Those bits become a key. That key encrypts and decrypts a message. Locally, it runs on the simulator. In Azure, it submits through Azure Quantum. Same concept, cloud-backed quantum workflow.”
+
 ## How To Submit To Azure Quantum
 
 This repo includes an optional helper:
@@ -261,6 +277,16 @@ Challenge students to:
 - collect 16 bits instead of 8
 - build a bigger integer key
 - adapt the XOR helper to use two key bytes instead of one
+
+## 48-Hour Challenge
+
+Modify the lockbox from 8-bit to 16-bit.
+
+Run it 100 times.
+
+Graph the number of `0`s and `1`s.
+
+Explain whether the output looks random.
 
 ## Teacher / Facilitator Guide
 
