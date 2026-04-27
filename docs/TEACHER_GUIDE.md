@@ -183,6 +183,17 @@ Check:
 - `az account set --subscription ...`
 - `AZURE_QUANTUM_RESOURCE_ID` is set correctly
 
+Fallback note:
+The Azure Quantum CLI extension is optional for this workshop. If `az quantum` fails to install or run, do not block the workshop. The preferred path is Python/QDK direct submission using:
+
+```bash
+export AZURE_QUANTUM_RESOURCE_ID="/subscriptions/<SUBSCRIPTION_ID>/resourceGroups/<RESOURCE_GROUP>/providers/Microsoft.Quantum/Workspaces/<WORKSPACE_NAME>"
+python3 scripts/submit_to_azure.py
+```
+
+Troubleshooting note:
+If submission fails because `AZURE_QUANTUM_RESOURCE_ID` is unset, the repo is working. The Azure workspace just has not been configured in the shell yet.
+
 ### Students get a key of `0`
 
 That is rare but valid. If the demo feels boring, rerun the script once.

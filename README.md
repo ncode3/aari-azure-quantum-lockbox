@@ -229,6 +229,17 @@ python scripts/submit_to_azure.py
 
 Do not submit repeated Azure Quantum jobs without instructor approval. Local simulator is free. Hardware/provider jobs may consume Azure credits.
 
+Fallback note:
+The Azure Quantum CLI extension is optional for this workshop. If `az quantum` fails to install or run, do not block the workshop. The preferred path is Python/QDK direct submission using:
+
+```bash
+export AZURE_QUANTUM_RESOURCE_ID="/subscriptions/<SUBSCRIPTION_ID>/resourceGroups/<RESOURCE_GROUP>/providers/Microsoft.Quantum/Workspaces/<WORKSPACE_NAME>"
+python3 scripts/submit_to_azure.py
+```
+
+Troubleshooting note:
+If submission fails because `AZURE_QUANTUM_RESOURCE_ID` is unset, the repo is working. The Azure workspace just has not been configured in the shell yet.
+
 The encryption demo is intentionally local so students can focus on the secret-key story without waiting on cloud jobs.
 
 ## Student Challenge
