@@ -1,0 +1,4 @@
+name: lab-04-key-vault-security
+runtime:
+  name: python
+description: AARI Lab 04 - Azure Key Vault basics with Pulumi Python

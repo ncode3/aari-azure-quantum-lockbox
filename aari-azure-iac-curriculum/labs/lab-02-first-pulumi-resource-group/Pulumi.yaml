@@ -1,0 +1,4 @@
+name: lab-02-first-pulumi-resource-group
+runtime:
+  name: python
+description: AARI Lab 02 - first Azure Resource Group with Pulumi Python

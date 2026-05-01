@@ -1,0 +1,4 @@
+name: lab-05-logging-monitoring
+runtime:
+  name: python
+description: AARI Lab 05 - Azure logging and monitoring with Pulumi Python

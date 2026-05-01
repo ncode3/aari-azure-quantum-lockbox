@@ -1,0 +1,4 @@
+name: lab-03-storage-pipeline
+runtime:
+  name: python
+description: AARI Lab 03 - Azure storage pipeline with Pulumi Python

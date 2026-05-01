@@ -1,0 +1,4 @@
+name: lab-06-ai-infrastructure
+runtime:
+  name: python
+description: AARI Lab 06 - Azure AI infrastructure starter stack with Pulumi Python
